@@ -1,0 +1,8 @@
+@misc{nauata2020housegan,
+    title={House-GAN: Relational Generative Adversarial Networks for Graph-constrained House Layout Generation},
+    author={Nelson Nauata and Kai-Hung Chang and Chin-Yi Cheng and Greg Mori and Yasutaka Furukawa},
+    year={2020},
+    eprint={2003.06988},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
