@@ -1,8 +1,8 @@
-@misc{nauata2019vectorizing,
-    title={Vectorizing World Buildings: Planar Graph Reconstruction by Primitive Detection and Relationship Classification},
-    author={Nelson Nauata and Yasutaka Furukawa},
-    year={2019},
-    eprint={1912.05135},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@inproceedings{nauata2020vectorizing,
+  title={Vectorizing World Buildings: Planar Graph Reconstruction by Primitive Detection and Relationship Inference},
+  author={Nauata, Nelson and Furukawa, Yasutaka},
+  booktitle={European Conference on Computer Vision},
+  pages={711--726},
+  year={2020},
+  organization={Springer}
 }
