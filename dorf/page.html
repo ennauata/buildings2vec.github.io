@@ -5,23 +5,28 @@
     <link rel="stylesheet" href="../assets/css/project.css">
   </head>
 
-  <body>
-    <div class="content project_title">
-      <h1>DORF: Decomposing Object Radiance Field from Supporting Planes</h1>
-	  <h2 class="project-tagline"><a class="site-link" href="https://scholar.google.com.br/citations?user=B67MS9MAAAAJ&hl=en">Nelson Nauata</a>, 
-	  			      <a class="site-link" href="https://scholar.google.com/citations?user=Jy3u1_wAAAAJ&hl=en">Chen Liu</a>,
-	  			      <a class="site-link" href="https://scholar.google.com/citations?user=fSb94nAAAAAJ&hl=en">Zhaoyang Lv</a>  
+  <body >
+    <div class="content">
+      <h1 style="text-align: center;">DORF: Decomposing Object Radiance Field <br> from Supporting Planes</h1>
+	    <h2 style="font-size: 25px; text-align: center;" class="project-tagline"><a class="site-link" href="https://scholar.google.com.br/citations?user=B67MS9MAAAAJ&hl=en">Nelson Nauata<sup>1</sup></a>, 
+	  			<a class="site-link" href="https://scholar.google.com/citations?user=Jy3u1_wAAAAJ&hl=en">Chen Liu<sup>2</sup></a>,
+	  			 <a class="site-link" href="https://scholar.google.com/citations?user=fSb94nAAAAAJ&hl=en">Zhaoyang Lv<sup>2</sup></a>
+      </h2>
 	  			
-	<div font-size=10px>Simon Fraser University</div>
-	<div font-size=10px>Meta Reality Labs Research</div>
-    </div>
+      <div style="font-size: 25px; text-align: center; margin-bottom: 1vw;"><sup>1</sup>Simon Fraser University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <sup>2</sup>Meta Reality Labs Research</div>
 
-    <div class="content project_headline">
+      <div class="center_text">
+        <span style="font-size: 25px; text-align: center;" class="link"><a href="https://arxiv.org/abs/2003.06988">[Arxiv]</a></span>
+        <span style="font-size: 25px; text-align: center;" class="link"><a href="./DORF_supp.pdf">[Sup. Mat.]</a></span>
+     </div>
+
+     <hr style="margin-top: 2vw; margin-bottom: 1vw;"/>
+    <div class="project_headline">
       <div class="img">
         <img class="img_teaser" src="teaser.png" alt="Teaser">
       </div>
       <div>
-        <p style="text-align:left;">Figure 1. Given only localized multi-view images of objects sitting on a planar scene in (1), our method can produce category-agnostic high-quality reconstruction of the object in (2), simultaneously segment the object in 3D in (3), and recover object depth in (4). We can further enable scene editing without the need for any mask inputs, as we copy, resize, and move the Pikachu and put a toy bear extracted from another scene on the reconstructed 3D plane in (5).</p>
+        <p style="text-align:left; line-height: 100%;">Figure 1. Given only localized multi-view images of objects sitting on a planar scene in (1), our method can produce category-agnostic high-quality reconstruction of the object in (2), simultaneously segment the object in 3D in (3), and recover object depth in (4). We can further enable scene editing without the need for any mask inputs, as we copy, resize, and move the Pikachu and put a toy bear extracted from another scene on the reconstructed 3D plane in (5).</p>
       </div>
       <hr />
     </div>
@@ -29,7 +34,7 @@
     <div>
       <div>
         <h3 style="text-align:center;">Abstract</h3>
-        	<p style="text-align:left;">We propose a novel self-supervised neural reconstruction method that can reconstruct and segment 3D objects at high-quality using localized multi-view images. By assuming objects usually sitting on one supporting plane, we represent a 3D scene as one major supporting plane with multiple objects on top, with each entity as a neural radiance field parameterized by a coordinate-based MLP. We jointly reconstruct the 3D objects, the planar structure, and the 3D decomposition via multi-pass differentiable neural radiance field rendering using only images as input. In contrast to the traditional semantic-based 3D object localization and reconstruction methods, our method is completely taxonomy free and can achieve accurate 3D segmentation for a wide variety of opaque objects. We demonstrate that our method can achieve high-quality view-consistent rendering and object segmentation for a wide range of objects in CO3D dataset without using any provided masks. Our method works equally well for objects which can not be detected and localized by semantic-based methods. With the accurate geometry, appearance modeling and decomposition, we can further enable 3D object discovery and scene editing applications.</p>
+        	<p style="text-align:left; line-height: 100%;">We propose a novel self-supervised neural reconstruction method that can reconstruct and segment 3D objects at high-quality using localized multi-view images. By assuming objects usually sitting on one supporting plane, we represent a 3D scene as one major supporting plane with multiple objects on top, with each entity as a neural radiance field parameterized by a coordinate-based MLP. We jointly reconstruct the 3D objects, the planar structure, and the 3D decomposition via multi-pass differentiable neural radiance field rendering using only images as input. In contrast to the traditional semantic-based 3D object localization and reconstruction methods, our method is completely taxonomy free and can achieve accurate 3D segmentation for a wide variety of opaque objects. We demonstrate that our method can achieve high-quality view-consistent rendering and object segmentation for a wide range of objects in CO3D dataset without using any provided masks. Our method works equally well for objects which can not be detected and localized by semantic-based methods. With the accurate geometry, appearance modeling and decomposition, we can further enable 3D object discovery and scene editing applications.</p>
       </div>
 	  <hr />
 	  
@@ -39,19 +44,24 @@
       <div>
         <h3 style="text-align:center;">Video</h3>
       </div>
-      <div class="img">
-		<img class="img_teaser" src="paper.jpg">
-      </div>
-      <div class="center_text">
-	     <span class="link"><a href="https://arxiv.org/abs/2003.06988">[Arxiv]</a></span>
-	     <span class="link"><a href="./DORF_supp.pdf">[Supp.]</a></span>
-	  </div>
+      <table align="center" width="900px">
+        <tbody><tr>
+          <td align="center" width="900px">
+            <center>
+              <video width="900px" autoplay="" loop="" mute="" playsinline="" controls="">
+                <source src="./supplementary_video_final.m4v" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+            </center>
+          </td>
+        </tr>
+      </tbody></table>
+
+      
 	  <hr />
 	</div>
 	
-	<div class="content">
-		<hr />
-	</div>
+
     
   </body>
 </html>
